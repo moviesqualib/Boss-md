@@ -1,0 +1,31 @@
+{
+  "name": "Boss-md",
+  "description": "Javascript WhatsApp bot made by Younas Bhai",
+  "logo": "https://qu.ax/rejHh.jpg",
+  "keywords": ["bot,Bossmd,Boss-md,BOSS-MD"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "ALIVE_IMG": {
+      "description": "https://qu.ax/GkDqj.jpg",
+      "required": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "Hello, Boss-md is alive.",
+      "required": true
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
